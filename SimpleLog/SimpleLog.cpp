@@ -9,8 +9,10 @@
 
 namespace SimpleLog 
 {
+	// This is for formatting the terminal output you should NOT use this
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	LoggingLevel defaultLevel = LoggingLevel::Info;
+	
+	const LoggingLevel defaultLevel = LoggingLevel::Info;
 
 	Logger::Logger(LoggingLevel _minLogLevel = defaultLevel) 
 	{
